@@ -4,9 +4,133 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+    <!-- MCW -->
+    <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
+    
     <title>Document</title>
+
+    <style>
+        .card-title {
+            margin-left: 3%;
+            margin-top: 6%;
+            font-size: 20px;
+        }
+        .card-description {
+            margin-left: 3%;
+            font-size: 16px;
+        }
+        .row {
+            margin-top: 5%;
+        }
+
+        .my-card {
+            height: 300px;
+            width: 350px;
+            margin-left: 15%;
+            margin-right: 0;
+        }
+
+        .my-card__media {
+            /* background-size: 100% 100%; */
+            background-image: url("https://img.webmd.com/dtmcms/live/webmd/consumer_assets/site_images/article_thumbnails/other/cat_relaxing_on_patio_other/1800x1200_cat_relaxing_on_patio_other.jpg");
+        }
+
+        .personal-info {
+            margin-left: 7%;
+            margin-top: 5%;
+        }
+    </style>
 </head>
 <body>
+
+    <p class="fs-1 text-center">Sergiu Buruiana Portofolio</p>
+
+    <div class="personal-info fs-4">
+        
+        <span>
+            <p class="fs-4 fw-bold">Education:</p>
+            <p class="fs-5">Pursuing a BS Computer Science at University of Illinois at Chicago </p>
+        </span>
+        <span>
+            <p class="fs-4 fw-bold">Contact information:</p>
+            <p class="fs-5">sergiu.buru99@gmail.com</p>
+        </span>
+        <span>
+            <a href="https://github.com/sergiuBuru" class="text-decoration-none" target="_blank">Github</a>
+        </span>   
+     </div>
+    
+
+    <!-- Grid for cards -->
+    <div class="row">
+        <div class="col-sm cell1">
+            <!-- CARD -->
+            <div class="mdc-card my-card ">
+                <div class="mdc-card__primary-action">
+                    <div class="my-card__media mdc-card__media mdc-card__media--square mdc-card__media--16-9">
+                    <!-- <div class="mdc-card__media-content"></div> -->
+                    </div>
+                    <!-- ... additional primary action content ... -->
+                </div>
+                <div>
+                    <strong class="card-title"></strong>
+                    <p class="card-description"></p>
+                </div>              
+                <div class="mdc-card__actions mdc-card__actions--full-bleed">
+                    <a class="repo mdc-button mdc-card__action mdc-card__action--button" href="#">
+                        <div class="mdc-button__ripple"></div>
+                        <span class="mdc-button__label">Repository</span>
+                    </a>
+    
+                    <a class="website mdc-button mdc-card__action mdc-card__action--button" href="#">
+                        <div class="mdc-button__ripple"></div>
+                        <span class="mdc-button__label">Website</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm cell2">
+            <!-- CARD -->
+            <div class="mdc-card my-card ">
+                <div class="mdc-card__primary-action">
+                    <div class="my-card__media mdc-card__media mdc-card__media--square mdc-card__media--16-9">
+                    <!-- <div class="mdc-card__media-content"></div> -->
+                    </div>
+                    <!-- ... additional primary action content ... -->
+                </div>
+                <div>
+                    <strong class="card-title">title</strong>
+                    <p class="card-description">description</p>
+                </div>              
+                <div class="mdc-card__actions mdc-card__actions--full-bleed">
+                    <a class="repo mdc-button mdc-card__action mdc-card__action--button" href="#">
+                        <div class="mdc-button__ripple"></div>
+                        <span class="mdc-button__label">Repository</span>
+                    </a>
+    
+                    <a class="website mdc-button mdc-card__action mdc-card__action--button" href="#">
+                        <div class="mdc-button__ripple"></div>
+                        <span class="mdc-button__label">Website</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm cell3">
+            
+        </div>
+        <div class="col-sm cell4"></div>
+    </div>
+
+
+    <script src="projects.js"></script>
+
+
     
 </body>
 </html>
